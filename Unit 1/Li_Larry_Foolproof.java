@@ -157,7 +157,7 @@ public class Li_Larry_Foolproof {
 			 }
          
 		// continure looping the entire program until the numerator starts with 'Q' or 'q'
-		} while (!String.valueOf(numeratorStr.charAt(0)).equals("q") && !String.valueOf(numeratorStr.charAt(0)).equals("Q")); 
+		} while (!String.valueOf(numeratorString.charAt(0)).equals("q") && !String.valueOf(numeratorString.charAt(0)).equals("Q")); 
 		
 	}
 }
