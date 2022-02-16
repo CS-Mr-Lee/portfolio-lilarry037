@@ -54,9 +54,7 @@ public class Li_Larry_SASTriangleSolver {
 		smallestAngle = Math.toDegrees(smallestAngle);
 		
 		return smallestAngle;
-		
 	}
-	
 	
 	public static void main(String[] args) {
 		
@@ -75,13 +73,10 @@ public class Li_Larry_SASTriangleSolver {
 		double containedAngle = sc.nextDouble();
 		
 		//use the smallestAngle method to find the smallest angle in the triangle
-		
 		double smallestAngle = smallestAngle(firstSide, secondSide, containedAngle);
 		
-		
+		//print the solution to the console
 		System.out.println("The smallest angle in the triangle is: " + smallestAngle + " degrees.");
 		
-		
 	}
-
 }
