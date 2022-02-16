@@ -61,7 +61,7 @@ public class Li_Larry_Foolproof {
 				valid = false;
 			}
 
-			 }while (valid == false && !numeratorString.substring(0,1).equals("q") && !numeratorString.substring(0,1).equals("Q")); 
+			 } while (valid == false && !numeratorString.substring(0,1).equals("q") && !numeratorString.substring(0,1).equals("Q")); 
 
 
 			 //do not continue running the code if the user has chosen to exit
@@ -118,7 +118,7 @@ public class Li_Larry_Foolproof {
 					 }
 					 //catch the edge case of division by zero
 					 //also ensure decimals are removed from integers
-					 else{
+					 else {
 
 						 System.out.print("You can't divide ");
 
@@ -135,20 +135,20 @@ public class Li_Larry_Foolproof {
 				 //catch all other cases of impossible divison
 				 catch (ArithmeticException e) {
 
-					 System.out.print("You can't divide ");
+					System.out.print("You can't divide ");
 					 
-					 if (numerator % 1 == 0) {
-						 System.out.print((int)numerator);
-					 } else {
-						 System.out.print(numerator);
-					 }
-					 System.out.print(" by ");
-					 if (denominator % 1 == 0) {
-						 System.out.print((int)denominator);
-					 } else {
-						 System.out.print(denominator);
-					 }
-					 System.out.println(".");
+					if (numerator % 1 == 0) {
+						System.out.print((int)numerator);
+					} else {
+						System.out.print(numerator);
+					}
+					System.out.print(" by ");
+					if (denominator % 1 == 0) {
+						System.out.print((int)denominator);
+					} else {
+						System.out.print(denominator);
+					}
+					System.out.println(".");
 				       valid = false;
 
 				}
