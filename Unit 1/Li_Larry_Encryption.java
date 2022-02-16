@@ -78,15 +78,12 @@ public class Li_Larry_Encryption {
 				encryptedWords[i] = unencryptedWords[i];
 			}
 			
-			
 		} //end of outer for loop
 
 		//loop through the array of encrypted words to output the encrypted sentence
 		for(String word : encryptedWords) {
 			System.out.print(word + " ");
 		}
-		
-		
+			
 	}
-
 }
