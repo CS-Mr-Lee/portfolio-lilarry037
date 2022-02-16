@@ -25,8 +25,7 @@ import java.io.*;
 public class Li_Larry_ChampionFilter {
 
 	public static void main(String[] args) {	
-		
-		
+			
 		try {
 			//use buffered reader to read the file
 			FileReader inputfile = new FileReader("champions.json");
@@ -104,6 +103,5 @@ public class Li_Larry_ChampionFilter {
 			System.out.println("Could not locate file.");
 		}
 	
-		
 	}
 }
