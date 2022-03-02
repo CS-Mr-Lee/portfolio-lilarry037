@@ -88,6 +88,9 @@ public class Human {
 	  }else {
 		  this.weight += grams * 0.001;
 		  this.energyLevel += calories / 15;
+		  if (this.energyLevel > 100) {
+			  this.energyLevel = 100;
+		  }
 	  }
 	  
   }
@@ -108,6 +111,9 @@ public class Human {
 	  }else {
 		  this.weight += grams * 0.001;
 		  this.energyLevel += calories / 15;
+		  if (this.energyLevel > 100) {
+			  this.energyLevel = 100;
+		  }
 	  }
   }
 
