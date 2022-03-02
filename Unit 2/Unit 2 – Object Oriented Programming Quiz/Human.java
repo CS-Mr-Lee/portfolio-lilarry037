@@ -84,7 +84,7 @@ public class Human {
 	  int calories = veg.eaten(grams);
 	  
 	  if(calories == -1) {
-		  System.out.println("I don’t have that much food.");
+		  System.out.println("I donâ€™t have that much food.");
 	  }else {
 		  this.weight += grams * 0.001;
 		  this.energyLevel += calories / 15;
@@ -96,14 +96,15 @@ public class Human {
    *  @param food: the cookie object being eaten
    *  @param grams: the number of grams of the cookie eaten
    *  similarly to vegetable, check that the weight of the cookie is greater than the parameter grams
+   *  add an additional error message for when the cookie is still in it's packaging
    */
   public void eat(Cookie food, double grams) {
 	  int calories = food.eaten(grams);
 	  
 	  if(calories == -2) {
-		  System.out.println("I can’t eat the bag.");
+		  System.out.println("I canâ€™t eat the bag.");
 	  }else if(calories == -1){
-		  System.out.println("I don’t have that much food.");
+		  System.out.println("I donâ€™t have that much food.");
 	  }else {
 		  this.weight += grams * 0.001;
 		  this.energyLevel += calories / 15;
@@ -131,7 +132,7 @@ public class Human {
     }
   }
 
-  /** toString method to output all parameters */
+  /** method to collect all parameters in one string using String concatenation*/
   public String toString() {
     String output = "Name: ";
     output += name;
