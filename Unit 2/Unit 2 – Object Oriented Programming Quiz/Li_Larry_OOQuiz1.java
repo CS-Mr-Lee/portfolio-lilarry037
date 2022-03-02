@@ -30,7 +30,7 @@ public class Li_Larry_OOQuiz1 {
 		Cookie cookie2 = new Cookie("Chocolate chip", 200, 500);
 		Cookie cookie3 = new Cookie("Shortbread", 100, 300, true);
 
-		person1.eat(cookie3, 150);
+		person1.eat(cookie3, 100);
 		person1.eat(vegetable1, 500);
 		person1.eat(cookie2, 100);
 
