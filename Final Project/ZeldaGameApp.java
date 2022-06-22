@@ -223,14 +223,14 @@ public class ZeldaGameApp extends GameApplication {
         
     }
     
-	public void stun() {
+	public static void stun() {
 		immobile = true;
 		player.getComponent(PhysicsComponent.class).setVelocityY(0); 
 		player.getComponent(PhysicsComponent.class).setVelocityX(0); 
 		player.getComponent(AnimationComponent.class).stopWalkSound();
 	}
 	
-	public void unStun() {
+	public static void unStun() {
 		immobile = false;
 	}
     
