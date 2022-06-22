@@ -181,7 +181,6 @@ public class ZeldaGameApp extends GameApplication {
 
     
     @Override
-    
     protected void initInput() {
 	
     	Input input = FXGL.getInput();
@@ -192,18 +191,18 @@ public class ZeldaGameApp extends GameApplication {
     	input.addAction(walkUp, KeyCode.W);
     	input.addAction(walkDown, KeyCode.S);
 
-    	/*
+    	
         FXGL.onKey(KeyCode.F, () -> {
             player.getComponent(AnimationComponent.class).holdUp();
         });
-        */
+        
         
         FXGL.onKeyDown(KeyCode.J, () -> {
         	arrow = getGameWorld().spawn("arrow", new SpawnData(
                     player.getX(),
                     player.getY())
                     .put("direction", launchDirection()));
-        		
+        
         });
         
         FXGL.onKeyDown(KeyCode.K, () -> {
@@ -239,8 +238,6 @@ public class ZeldaGameApp extends GameApplication {
     	return immobile;
     }
     
-    //for text that updates based on what the player does (ex. gold collected)
-   
     @Override
     protected void initUI() {
     	
@@ -249,7 +246,7 @@ public class ZeldaGameApp extends GameApplication {
 
         HP.textProperty().bind(FXGL.getWorldProperties().intProperty("HP").asString());
         
-        FXGL.getGameScene().addUINode(HP); // add to the scene graph
+        FXGL.getGameScene().addUINode(HP); 
         
     }
     
@@ -268,7 +265,7 @@ public class ZeldaGameApp extends GameApplication {
 				return new Point2D(player.getX(), player.getY() - 50);
 			
 			}
-    	}
+    		}
     }
     
     @Override
@@ -337,8 +334,7 @@ public class ZeldaGameApp extends GameApplication {
         });
          
         
-        //requires loading screen in a new class, not enough time
-          
+        //I think this requires a loading screen which requires a new class, not enough time to implement
         FXGL.getPhysicsWorld().addCollisionHandler(new CollisionHandler(EntityType.PLAYER, EntityType.WARPZONE1) {
             @Override
             protected void onCollision(Entity player, Entity warpZone1) {
@@ -353,17 +349,15 @@ public class ZeldaGameApp extends GameApplication {
             	}
             		
             }
-            
         });
-        
                
+	 
         FXGL.getPhysicsWorld().addCollisionHandler(new CollisionHandler(EntityType.SWORD, EntityType.ENEMY) {
             @Override
             protected void onCollision(Entity sword, Entity enemy) {
             	enemy.removeFromWorld();
             		
             }
-            
         });
         
         FXGL.getPhysicsWorld().addCollisionHandler(new CollisionHandler(EntityType.ARROW, EntityType.ENEMY) {
@@ -373,11 +367,8 @@ public class ZeldaGameApp extends GameApplication {
             	enemy.removeFromWorld();
             		
             }
-            
         });
-        
-        
-        
+
         FXGL.getPhysicsWorld().setGravity(0, 0);
         
     }
@@ -402,9 +393,7 @@ public class ZeldaGameApp extends GameApplication {
  	    		swordCooldown = false;
  	    	}, Duration.seconds(1));
     	}
-    	
     }
-    
     
     
     private void initLevel() {
@@ -424,11 +413,11 @@ public class ZeldaGameApp extends GameApplication {
         
     }
 
-    
     public static void main(String[] args) {
     	if (args.length > 0) {
             startLevel = Integer.parseInt(args[0]);
         }
         launch(args);
     }
+	
 }
