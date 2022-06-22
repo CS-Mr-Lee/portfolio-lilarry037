@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="orthogonal" renderorder="right-down" width="6" height="6" tilewidth="48" tileheight="48" infinite="0" nextlayerid="6" nextobjectid="9">
+ <tileset firstgid="1" name="Inner" tilewidth="48" tileheight="48" tilecount="1000" columns="40">
+  <image source="Inner.png" width="1920" height="1200"/>
+ </tileset>
+ <layer id="2" name="Tile Layer 0" width="6" height="6" locked="1">
+  <data encoding="csv">
+122,123,123,123,123,124,
+122,123,123,123,123,124,
+122,123,123,123,123,124,
+162,0,0,0,0,164,
+162,0,0,0,0,164,
+202,203,203,203,203,204
+</data>
+ </layer>
+ <layer id="1" name="Tile Layer 1" width="6" height="6" locked="1">
+  <data encoding="csv">
+281,282,282,282,282,283,
+281,282,282,282,282,283,
+281,282,282,282,282,283,
+321,322,322,322,322,323,
+321,322,322,322,322,323,
+361,362,362,362,362,363
+</data>
+ </layer>
+ <layer id="3" name="Tile Layer 3" width="6" height="6">
+  <data encoding="csv">
+41,41,41,41,41,41,
+41,41,41,41,41,41,
+57,0,0,0,0,0,
+97,0,0,0,0,0,
+137,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Tile Layer 4" width="6" height="6">
+  <data encoding="csv">
+605,0,13,14,0,605,
+645,0,491,492,0,645,
+0,0,0,51,53,179,
+0,0,0,91,93,219,
+0,0,0,131,133,259,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Object Layer 1">
+  <object id="1" type="barrier" x="-1.60571" y="92.1677" width="49.777" height="140.981"/>
+  <object id="3" type="barrier" x="145.798" y="96.6637" width="92.4888" height="140.981"/>
+  <object id="4" type="barrier" x="238.93" y="117.217" width="49.4558" height="91.5254"/>
+  <object id="5" type="barrier" x="0" y="-1.28457" width="289.028" height="98.2694"/>
+  <object id="6" type="warpZone1" x="93.4523" y="269.438" width="101.16" height="20.8742"/>
+ </objectgroup>
+</map>
