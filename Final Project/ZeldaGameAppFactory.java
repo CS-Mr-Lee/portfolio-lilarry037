@@ -7,7 +7,6 @@ import static com.almasb.fxgl.dsl.FXGL.getInput;
 import static com.almasb.fxgl.dsl.FXGLForKtKt.getGameWorld;
 
 import com.almasb.fxgl.dsl.FXGL;
-
 import com.almasb.fxgl.dsl.components.OffscreenCleanComponent;
 import com.almasb.fxgl.dsl.components.ProjectileComponent;
 import com.almasb.fxgl.dsl.components.RandomMoveComponent;
@@ -31,7 +30,6 @@ import javafx.scene.shape.Rectangle;
 import main.ZeldaGameApp.EntityType;
 
 public class ZeldaGameAppFactory implements EntityFactory{
-
 
 	@Spawns("player")
     public Entity newPlayer(SpawnData data) {
@@ -87,8 +85,7 @@ public class ZeldaGameAppFactory implements EntityFactory{
 	                    getAppWidth(), getAppHeight()), 100))
 	                .build();
 	    }
-	
-	
+
 	 @Spawns("sword")
 	    public Entity newSword(SpawnData data) {
 	        
@@ -118,7 +115,7 @@ public class ZeldaGameAppFactory implements EntityFactory{
         		.type(EntityType.WARPZONE1)
         		.bbox(new HitBox(BoundingShape.box(data.<Integer>get("width"), data.<Integer>get("height"))))
         		.collidable()
-                .build();
+                	.build();
     }
 	
 	@Spawns("warpZone2")
@@ -127,9 +124,7 @@ public class ZeldaGameAppFactory implements EntityFactory{
         		.type(EntityType.WARPZONE2)
         		.bbox(new HitBox(BoundingShape.box(data.<Integer>get("width"), data.<Integer>get("height"))))
         		.collidable()
-                .build();
+                	.build();
     }
-	
-	
 	
 }
